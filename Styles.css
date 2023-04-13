@@ -1,0 +1,95 @@
+@charset "utf-8";
+html {
+    background-color: #454545;
+    margin: 20px;
+}
+* {
+  box-sizing: border-box;
+}
+body{
+    font-family: Arial;
+    text-align: center;
+}
+.header {
+  grid-area: header;
+  background-color: #2D4533;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+.topnav {
+  overflow: auto;
+  background-color: #B4C885;
+  display: block;
+  width: 100%;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  width: 20%;
+}
+.topnav a:hover {
+  background-color: #2D4533;
+  color: black;
+}
+.content {
+  background-color: #F0EEEB;
+  padding: 10px;
+  height: 100%px;
+}
+.content h2 {
+  text-align: center;
+  position: relative;
+}
+.footer {
+  grid-area: footer;
+  background-color: #2D4533;
+  padding: 10px;
+  text-align: center;
+}
+.map p {
+  text-align: center;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'left right right right right right'
+    'footer footer footer footer footer footer';
+  grid-column-gap: 10px;
+}
+.left,
+.right {
+  padding: 10px;
+  height: 100%;
+}
+.left {
+  grid-area: left;
+}
+.right {
+  grid-area: right;
+}
+.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: center;
+  width: 25%;
+}
+.gallery:hover {
+  border: 1px solid #777;
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+.imagegallery {
+    display: flex;
+}
