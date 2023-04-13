@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nelson's Movies</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+    <a href="index.html">Home</a>
+    <a href="action.html" class="active">Action</a>
+    <a href="comedy.html">Comedy</a>
+    <a href="drama.html">Drama</a>
+    <a href="horror.html">Horror</a>
+    <a href="suggest.html">Suggestions</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+<div style="text-align:center">
+  <h1>Suggestions</h1>
+</div>
+
+<div class="container">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="genre">Genre</label>
+    <select id="genre" name="genre">
+      <option value="action">Action</option>
+      <option value="drama">Drama</option>
+      <option value="comedy">Comedy</option>
+      <option value="horror">Horror</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="title">Subject</label>
+    <textarea id="title" name="title" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+
+<script src="javascript.js"></script>
+
+<div class="footer">
+    <p>Contact me: <a href="mailto:nelsonacosta@my.unt.edu">Email</a></p>
+</div>
+
+<script src="javascript.js"></script>
+
+
+</body>
+</html>

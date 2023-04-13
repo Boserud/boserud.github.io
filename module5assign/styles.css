@@ -1,0 +1,183 @@
+@font-face {
+    font-family: "Bungee";
+    src: url("./fonts/Bungee-Regular.ttf");
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("./fonts/Roboto-Regular.ttf");
+}
+body {
+    background-color: #383e56;
+}
+
+/* Text */
+h1, h2, p {
+    font-family: Roboto;
+    color: #f4f5f8;
+}
+h3 {
+    font-weight: 300!important;
+    font-size: 25px !important;
+    font-family: Roboto;
+    color: #f4f5f8;
+}
+h4 {
+    font-size: 18px !important;
+    font-weight: 300 !important;
+    font-family: Roboto;
+    color: #f4f5f8;
+}
+.content {
+    padding: 5px;
+    position: relative;
+    text-align: center;
+}
+
+/* footer */
+.footer {
+    display: block;
+    background-color: #E0BA6A;
+    color: #f4f5f8;
+    overflow: hidden;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* topnav background */
+.topnav {
+    display: block;
+    font-family: "Bungee";
+    background-color: #E0BA6A;
+    overflow: hidden;
+}
+/* topnav link style */
+.topnav a {
+    float: left;
+    display:block;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+/* link hover color */
+.topnav a:hover {
+    background-color: #f75757;
+}
+.topnav a:active {
+    opacity: 0.5;
+}
+/* active class */
+.topnav a.active {
+    opacity: 0.7;
+}
+/* hide link */
+.topnav .icon {
+    display: none;
+}
+
+/* Scroll */
+.scroll-tray {
+    white-space: nowrap;
+}
+.scroll-tray div {
+    display: inline-block;
+}
+.scroll-tray img {
+    border-radius: 0.3rem;
+    margin: 7px 5px;
+    padding: 0;
+    width: 340px;
+}
+.scroll-holder {
+    overflow-x: hidden;
+}
+.scroll-holder .scroll-tray:first-child {
+    animation: scroll-tray-hero 180s linear infinite;
+}
+.scroll-holder .scroll-tray:last-child {
+    animation: scroll-tray-hero 100s linear infinite;
+}
+@keyframes scroll-tray-hero {
+    0% {
+        transform: translateX(0);
+    }
+    99.99% {
+        transform: translateX(-4248px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Slider */
+.mySlides {
+    display: none;
+    width: 100%;
+    margin-left: 25%;
+}
+
+/* forms */
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #e0ba6a;
+  color: #f4f5f8;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  opacity: 1;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f75757;
+  padding: 20px;
+  font-family: Roboto;
+}
+label {
+    color: #f4f5f8;
+}
+
+/* media queries */
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+@media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}

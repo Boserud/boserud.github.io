@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chicken | Animal Noises</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+    <a href="index.html">Home</a>
+    <a href="pig.html">Pig</a>
+    <a href="chicken.html" class="active">Rooster</a>
+    <a href="why.html">Why?</a>
+    <a href="contact.html">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+<div class="content">
+    <h1>Rooster Sounds</h1>
+    <div class="tabs">
+        <span data-tab-value="#tab_1">Rooster Sound</span>
+        <span data-tab-value="#tab_2">Mimicked Sounds</span>
+    </div>
+
+    <div class="tab-content">
+        <div class="tabs__tab active" id="tab_1" data-tab-info>
+            <iframe width="175" height="310" src="media/rooster.mp4" allowfullscreen></iframe>
+        </div>
+        <div class="tabs__tab" id="tab_2" data-tab-info>
+            <p>Below is a typical sound here in the US, and the following sound in German!</p>
+            <audio
+                controls
+                src="media/roostex.mp3">
+                <a href="media/roostex.mp3">
+                    Download audio
+                </a>
+            </audio>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <p>Contact me: <a href="mailto:nelsonacosta@my.unt.edu">Email</a></p>
+</div>
+
+<script>
+    const tabs = document.querySelectorAll('[data-tab-value]')
+    const tabInfos = document.querySelectorAll('[data-tab-info]')
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const target = document
+                .querySelector(tab.dataset.tabValue);
+
+            tabInfos.forEach(tabInfo => {
+                tabInfo.classList.remove('active')
+            })
+            target.classList.add('active');
+        })
+    })
+</script>
+
+<script src="javascript.js"></script>
+
+</body>
+</html>

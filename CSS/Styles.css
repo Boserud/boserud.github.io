@@ -1,0 +1,18 @@
+@charset "utf-8";
+html {
+    display: table;
+    background-image: url(Images/background.jpg);
+    background-color: #F0EEEB;
+    background-size: cover;
+    margin: 150px;
+}
+body {
+    display: table-cell;
+    vertical-align: middle;
+    background-color: #F0EEEB;
+    width: 50%;
+    margin: 20px;
+    padding: 5px;
+    border: 1px #454545;
+    border-radius: 25px 10px;
+}
